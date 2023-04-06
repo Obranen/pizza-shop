@@ -1,0 +1,70 @@
+@import "src/utils/themes/variables.module";
+
+.wrapper {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.wrapperTextarea {
+  text-align: left;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid $primary-color-dark;
+  border-radius: 6px;
+  padding: 10px 16px;
+  display: block;
+
+  &::placeholder {
+    color: $primary-color-main;
+  }
+}
+
+.inputRise {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $primary-color-dark;
+  padding: 10px 16px;
+  display: block;
+  margin-top: -8px;
+
+  &::placeholder {
+    text-transform: capitalize;
+    color: $primary-color-main;
+  }
+
+  &:focus {
+    border: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-bottom: 2px solid $primary-color-dark;
+    margin-bottom: -1px;
+  }
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  line-height: 1.2;
+  padding-left: 10px;
+  border: 1px solid $primary-color-main;
+  border-radius: 6px;
+
+
+  &:focus {
+    border: 1px solid $primary-color-dark;
+    outline: none;
+  }
+
+  &::placeholder {
+
+  }
+}

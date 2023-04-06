@@ -1,0 +1,27 @@
+@import "src/utils/themes/variables.module";
+
+.noReview {
+  text-align: center;
+  margin-top: 20px;
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    margin-top: 50px;
+  }
+}
+
+.wrapperImg {
+  .img {
+    display: inline-block;
+  }
+}
+
+.text {
+  font-size: 14px;
+  font-family: $secondary-font;
+  font-weight: bold;
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}

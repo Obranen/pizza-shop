@@ -1,0 +1,24 @@
+.wrapper {
+  display: block;
+  margin-top: 20px;
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.select {
+  font-size: 14px;
+  height: 44px;
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    padding-left: 14px;
+    padding-right: 26px;
+    height: 45px;
+    &:after {
+      right: 17px;
+      transform: translate(80%, -36%);
+    }
+  }
+}

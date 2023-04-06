@@ -1,0 +1,104 @@
+@import "../../../../../../../utils/themes/variables.module";
+
+.wrapperOption {
+  text-align: left;
+  //margin: 0 10px;
+  margin-top: 10px;
+}
+
+.checkboxLabel {
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.wrapperProduct {
+  position: relative;
+  //margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.group1 {
+  display: flex;
+  justify-content: space-between;
+
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    transform: translateX(-30px);
+  }
+
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    transform: translateX(-70px);
+  }
+}
+
+.wrapperPrice {
+  margin: 0 !important;
+
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    transform: translateX(-20px);
+  }
+
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    transform: translateX(-50px);
+  }
+}
+
+.title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.groupOptions {
+  font-size: 12px;
+  position: relative;
+}
+
+.optionAdd {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-size: 22px;
+  color: $primary-color-main;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-color-dark;
+  }
+}
+
+.activeOption {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4px;
+}
+
+.optionClose {
+  display: inline-block;
+  color: $text-color-error;
+  padding-right: 2px;
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
+.optionText {
+  padding-right: 10px;
+}

@@ -1,0 +1,17 @@
+@import "../../../utils/themes/variables.module";
+
+.footer {
+  flex-shrink: 0;
+  background: $primary-color-dark;
+  color: $primary-color-light;
+  min-height: 70px;
+  text-align: center;
+  width: 100%;
+}
+
+// sm --- Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .footer {
+    min-height: 80px;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../../utils/themes/variables.module";
+
+.uploadFile {
+  margin-bottom: 20px;
+}
+
+.wrapperAddImage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.addImage {
+  padding-top: 13px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border: 2px dashed $primary-color-main;
+  color: $primary-color-main;
+  text-align: center;
+  font-weight: bold;
+  transition: ease .3s;
+
+  &:hover {
+    border: 2px dashed $primary-color-dark;
+    color: $primary-color-dark;
+  }
+
+  .plus {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+
+.showImages, .allDelete {
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+  background: $primary-color-main;
+  color: $primary-color-dark;
+  border-radius: 6px;
+  padding: 3px 0;
+  transition: ease .3s;
+
+  &:hover {
+    background: $primary-color-dark;
+    color: $primary-color-main;
+  }
+}

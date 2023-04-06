@@ -1,0 +1,14 @@
+@import "../../../utils/themes/variables.module";
+
+.totalPrice {
+  border-top: 1px solid $primary-color-main;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 22px;
+}
+
+.currency {
+  font-size: 16px;
+}

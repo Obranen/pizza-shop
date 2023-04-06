@@ -1,0 +1,23 @@
+@import "../../../../../../../../../../../../../utils/themes/variables.module";
+
+.wrapperLike {
+}
+
+.like, .dislike {
+  .icon {
+    cursor: pointer;
+  }
+
+  .text {
+    display: inline-block;
+    padding-left: 1px;
+  }
+}
+
+.like {
+  padding-right: 10px;
+}
+
+.active {
+  color: $secondary-color-main;
+}

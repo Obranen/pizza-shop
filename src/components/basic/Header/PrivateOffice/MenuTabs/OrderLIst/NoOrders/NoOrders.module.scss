@@ -1,0 +1,33 @@
+@import "../../../../../../../utils/themes/variables.module";
+
+.noOrders {
+  text-align: center;
+  margin-top: 60px;
+
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
+}
+
+.icon {
+  font-size: 50px;
+  color: $secondary-color-dark;
+
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    font-size: 60px;
+  }
+}
+
+.text {
+  font-family: $secondary-font;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    font-size: 18px;
+  }
+}

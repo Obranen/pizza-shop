@@ -1,0 +1,16 @@
+@import "../../../../utils/themes/variables.module";
+
+.imageUpload {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.allDelete {
+  cursor: pointer;
+  transition: ease .3s;
+
+  &:hover {
+    color: $text-color-error;
+  }
+}

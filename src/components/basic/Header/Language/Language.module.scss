@@ -1,0 +1,80 @@
+@import "../../../../utils/themes/variables.module";
+
+.language {
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    display: none;
+  }
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.lang {
+  font-family: $secondary-font;
+  display: flex;
+  @media (min-width: 768px) {
+    margin-right: 20px;
+  }
+}
+
+.wrapper {
+
+}
+
+.select {
+  background: $primary-color-dark !important;
+  color: $secondary-color-main !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  padding: 0 20px 0 0 !important;
+  height: 24px !important;
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+
+  }
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    color: $primary-color-light !important;
+    font-size: 16px !important;
+  }
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    font-size: 18px !important;
+    padding: 13px 18px 13px 6px !important;
+    height: 46px !important;
+  }
+  &:after {
+    border-color: $secondary-color-main transparent transparent transparent !important;
+    transform: translate(100%, -28%) !important;
+    // sm --- Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+
+    }
+    // md --- Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      border-color: $primary-color-light transparent transparent transparent !important;
+    }
+    // lg --- Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+
+    }
+  }
+}
+
+.list {
+  font-size: 14px !important;
+  top: 26px !important;
+  color: $primary-color-dark !important;
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    top: 38px !important;
+  }
+}
+
+.item {
+  padding: 6px 6px !important;
+  text-align: left;
+}
+

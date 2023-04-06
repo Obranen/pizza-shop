@@ -1,0 +1,11 @@
+.tabsList {
+  flex-wrap: wrap;
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.tabsItem {
+  font-size: 16px !important;
+}

@@ -1,0 +1,10 @@
+@import "../../../../../../../../../../utils/themes/variables.module";
+
+.imageView {
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}

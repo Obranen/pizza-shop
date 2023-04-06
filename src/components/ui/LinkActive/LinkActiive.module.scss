@@ -1,0 +1,5 @@
+@import "src/utils/themes/variables.module";
+
+.active {
+  color: $secondary-color-main !important;
+}

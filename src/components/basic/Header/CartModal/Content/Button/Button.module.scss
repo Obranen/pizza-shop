@@ -1,0 +1,14 @@
+.groupButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    margin-bottom: 6px;
+  }
+}

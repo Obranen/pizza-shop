@@ -1,0 +1,26 @@
+@import "../../../../../../utils/themes/variables.module";
+
+.button {
+  //width: 40%;
+  width: 100%;
+  padding: 2px;
+  border-color: transparent;
+  color: $primary-color-main;
+  transition: none;
+
+  &:hover {
+    color: $primary-color-dark;
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+.icon {
+  font-size: 16px;
+  padding-right: 2px;
+  transform: translateY(2px);
+}
+
+.text {
+  font-size: 14px;
+}

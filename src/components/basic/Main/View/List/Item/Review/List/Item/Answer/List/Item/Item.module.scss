@@ -1,0 +1,58 @@
+@import "src/utils/themes/variables.module";
+
+.wrapper {
+  border: 1px solid rgba($primary-color-dark, 0.2);
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px rgba($primary-color-dark, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  font-family: $secondary-font;
+  //margin-right: 20px;
+}
+
+.answer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+}
+
+.name {
+  font-family: $primary-font;
+  font-weight: bold;
+
+  .icon {
+    display: inline-block;
+    font-size: 12px;
+  }
+
+  .text {
+    display: inline-block;
+    &:first-letter {
+      color: $secondary-color-dark;
+    }
+  }
+}
+
+.date {
+  font-weight: bold;
+
+  .icon {
+    display: inline-block;
+    transform: translateY(1px);
+  }
+
+  .text {
+
+  }
+}
+
+.comment {
+  display: block;
+  text-indent: 10px;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}

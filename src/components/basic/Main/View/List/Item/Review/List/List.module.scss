@@ -1,0 +1,24 @@
+@import "src/utils/themes/variables.module";
+
+.wrapper {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-family: $primary-font;
+
+  .icon {
+    display: inline-block;
+    transform: translateY(3px);
+    margin-right: 1px;
+  }
+
+  .text {
+    display: inline-block;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

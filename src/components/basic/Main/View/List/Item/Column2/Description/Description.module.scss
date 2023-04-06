@@ -1,0 +1,13 @@
+@import "../../../../../../../../utils/themes/variables.module";
+
+.description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-indent: 6px;
+  &:first-letter {
+    font-weight: bold;
+    color: $secondary-color-dark;
+    font-size: 18px;
+  }
+}

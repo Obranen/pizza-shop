@@ -1,0 +1,69 @@
+@import "../../../../../utils/themes/variables.module";
+
+.image {
+  position: relative;
+  width: 200px;
+  border: 1px solid $primary-color-main;
+  margin-bottom: 10px;
+
+  img {
+    transition: ease .3s;
+  }
+
+  &:hover img{
+    filter: blur(2px);
+  }
+
+  &:hover .group2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &:hover .group4 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.group1, .group3 {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.group1 {
+  bottom: 0;
+}
+
+.group3 {
+  top: 0;
+}
+
+.group2, .group4 {
+  display: flex;
+  justify-content: space-between;
+  background: rgba($primary-color-dark, .8);
+  opacity: 0;
+  transition: linear .3s;
+}
+
+.name, .size, .number, .delete {
+  color: $primary-color-light;
+}
+
+.name, .number {
+  padding-left: 3px;
+}
+
+.size, .delete {
+  padding-right: 3px;
+}
+
+.delete {
+  cursor: pointer;
+  transition: ease .3s;
+
+  &:hover {
+    color: $text-color-error;
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../../utils/themes/variables.module";
+
+.form {
+  position: relative;
+  font-family: $secondary-font;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 18px;
+  font-family: $primary-font;
+
+  .icon {
+    display: inline-block;
+    transform: translateY(3px);
+    margin-right: 1px;
+  }
+
+  .text {
+    display: inline-block;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.content {
+  font-size: 14px;
+}
+
+.name {}
+
+.email {}
+
+.dignity, .flaws, .comment {
+  margin-top: -13px;
+}
+
+.wrapperStars {
+  display: flex;
+  justify-content: center;
+}
+
+.stars {
+  font-size: 22px;
+  margin-bottom: 10px;
+  transform: translateY(-4px);
+}
+
+.createReview {
+  font-size: 16px;
+
+  .icon {
+    display: inline-block;
+    transform: translateY(2px);
+    margin-right: 3px;
+  }
+
+  .text {
+    display: inline-block;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

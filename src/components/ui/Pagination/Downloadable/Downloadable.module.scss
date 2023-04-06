@@ -1,0 +1,41 @@
+@import "../../../../utils/themes/variables.module";
+
+.downloadable {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid $primary-color-main;
+  color: $primary-color-main;
+  padding: 6px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  margin: 10px auto 10px auto;
+  box-shadow: 0 4px 6px $primary-color-main;
+  transition: all ease .3s;
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    width: 66%;
+    padding: 8px;
+  }
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  &:hover {
+    border-color: rgba($primary-color-dark, 0.4);
+    color: rgba($primary-color-dark, 0.7);
+    box-shadow: 0 4px 6px rgba($primary-color-dark, 0.4);
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $primary-font;
+}

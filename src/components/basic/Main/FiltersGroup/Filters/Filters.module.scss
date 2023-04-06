@@ -1,0 +1,15 @@
+@import "../../../../../utils/themes/variables.module";
+
+.filters {
+  font-family: $primary-font;
+  margin-top: 20px;
+}
+
+.title {
+  transform: translateY(24px);
+  font-size: 20px;
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,83 @@
+@import "src/utils/themes/variables.module";
+
+.wrapper {
+  display: flex;
+  justify-content: right;
+}
+
+.dropdown {
+  position: relative;
+
+}
+
+.select {
+  width: 100%;
+  position: relative;
+  display: block;
+  text-align: left;
+  background: $primary-color-light;
+  border: 1px solid $primary-color-dark;
+  border-radius: 8px;
+  height: 46px;
+  padding: 13px 18px 13px 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(80%, -50%);
+    /* Рисуем треугольник */
+    width: 0;
+    height: 0;
+    border-width: 10.4px 6px 0 6px;
+    border-color: $primary-color-dark transparent transparent transparent;
+    border-style: solid;
+    /* Снимаем клик с треугольника */
+    pointer-events: none;
+  }
+}
+
+.selectName {
+
+}
+
+.selectText {
+
+}
+
+.list {
+  position: absolute;
+  left: 0;
+  top: 52px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: $primary-color-light;
+  box-shadow: 0 4px 8px rgba($primary-color-dark, 0.6);
+  overflow: hidden;
+  border-radius: 6px;
+  min-width: 100%;
+  z-index: 2;
+}
+
+.item {
+  margin: 0;
+  border: 1px solid $primary-color-dark;
+  border-bottom: 0;
+  padding: 13px 20px;
+  cursor: pointer;
+  &:first-child {
+    border-radius: 6px 6px 0 0;
+  }
+  &:last-child {
+    border-radius: 0 0 6px 6px;
+    border-bottom: 1px solid $primary-color-dark;
+  }
+  &:hover {
+    background: rgba($primary-color-dark, 0.1);
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../../utils/themes/variables.module";
+
+.mobileMenu {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: $secondary-color-main;
+  background-color: $primary-color-dark;
+  z-index: 2;
+  border-top: 1px solid #1e1e1e;
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.marginBottom {
+  margin-bottom: 70px;
+}

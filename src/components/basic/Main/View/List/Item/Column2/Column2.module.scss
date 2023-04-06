@@ -1,0 +1,11 @@
+@import "../../../../../../../utils/themes/variables.module";
+
+.wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}

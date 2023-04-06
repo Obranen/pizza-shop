@@ -1,0 +1,31 @@
+@import "../../../../../../utils/themes/variables.module";
+
+.page {
+  border: 1px solid $primary-color-light;
+  box-shadow: 0 0 2px $primary-color-dark;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    width: 16px;
+    height: 16px;
+  }
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    border: 1px solid $secondary-color-main;
+    box-shadow: 0 0 2px $secondary-color-main;
+  }
+}
+
+.active {
+  background-color: $secondary-color-main;
+  border: 1px solid $secondary-color-main;
+  box-shadow: 0 0 2px $secondary-color-main;
+}

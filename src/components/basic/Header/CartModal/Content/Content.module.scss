@@ -1,0 +1,29 @@
+@import "../../../../../utils/themes/variables.module";
+
+.content {
+  color: $primary-color-dark;
+  position: relative;
+  padding-bottom: 50px;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.number {
+  margin: auto;
+}
+
+.quantityNumber {
+  font-size: 18px;
+}

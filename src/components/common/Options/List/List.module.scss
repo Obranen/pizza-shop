@@ -1,0 +1,10 @@
+.checkboxWrapper {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  padding: 0 10px;
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 14px;
+  }
+}

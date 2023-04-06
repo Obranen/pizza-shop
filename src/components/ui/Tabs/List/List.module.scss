@@ -1,0 +1,13 @@
+@import "src/utils/themes/variables.module";
+
+.tabsGroup {
+  display: flex;
+  border: 1px solid $primary-color-dark;
+  border-radius: 6px;
+  font-family: $secondary-font;
+  margin-top: 10px;
+}
+
+.column {
+  flex-direction: column;
+}

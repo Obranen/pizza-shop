@@ -1,0 +1,22 @@
+@import "../../../utils/themes/variables.module";
+
+.button {
+  font-family: $primary-font;
+}
+
+.icon {
+
+}
+
+.text {
+
+}
+
+.addedInCart {
+  background-color: $primary-color-dark;
+  color: $primary-color-light;
+  border: 1px solid $primary-color-dark;
+  &:hover {
+    color: $primary-color-main;
+  }
+}

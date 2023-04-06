@@ -1,0 +1,38 @@
+.slider {
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    margin-bottom: 30px;
+  }
+}
+
+.imageList {
+  min-height: 100px;
+
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    min-height: 180px;
+  }
+
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    min-height: 240px;
+  }
+
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    min-height: 310px;
+  }
+
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    min-height: 375px;
+  }
+
+  @media (min-width: 1920px) {
+    min-height: 594px;
+  }
+}

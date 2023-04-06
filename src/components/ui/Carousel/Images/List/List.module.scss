@@ -1,0 +1,20 @@
+.wrapperList {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.list {
+  height: 100%;
+  display: flex;
+  transition: all ease 0.5s;
+  user-select: none;
+
+  div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

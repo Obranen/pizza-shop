@@ -1,0 +1,27 @@
+@import "../../../../../../../../utils/themes/variables.module";
+
+.wrapperIcon {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    right: 20px;
+    top: 2px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  cursor: pointer;
+  color: $primary-color-main;
+  font-size: 22px;
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  &:hover {
+    color: $primary-color-dark;
+  }
+}

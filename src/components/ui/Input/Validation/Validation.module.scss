@@ -1,0 +1,16 @@
+@import "src/utils/themes/variables.module";
+
+.error {
+  display: inline-block;
+  color: $text-color-error;
+  font-size: 12px;
+  text-transform: lowercase;
+  margin-left: 10px;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.errorTextarea {
+  transform: translateY(-8px);
+}

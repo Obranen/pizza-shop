@@ -1,0 +1,20 @@
+@import "./src/utils/themes/variables.module";
+
+.button {
+  border: 1px solid $secondary-color-dark;
+  color: $secondary-color-dark;
+  background-color: $primary-color-light;
+  border-radius: 10px;
+  padding: 2% 10%;
+  width: 100%;
+  transition: all ease .3s;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+  &:hover {
+    cursor: pointer;
+    color: $secondary-color-main;
+    border: 1px solid $primary-color-dark;
+    background-color: $primary-color-dark;
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../../../../../../utils/themes/variables.module";
+
+.order {
+  margin-left: 0;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  border: 1px solid $primary-color-dark;
+  border-radius: 6px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.info {
+  //display: flex;
+  //justify-content: space-between;
+  margin: 0 20px;
+  font-size: 14px;
+}
+
+.numberOrder {
+  font-size: 18px;
+  transform: translateY(-6px);
+
+  .icon {
+    font-size: 24px;
+    transform: translateY(7px);
+  }
+
+  .text {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: $secondary-font;
+  }
+}
+
+.timeOrder {
+  font-family: $secondary-font;
+  .icon {
+    font-size: 16px;
+    transform: translateY(2px);
+  }
+  .text {
+    font-size: 14px;
+  }
+}
+
+.totalPrice {
+  text-align: right;
+  font-family: $secondary-font;
+  color: $secondary-color-dark;
+  padding-right: 20px;
+  margin-top: 30px;
+  .price {
+    font-size: 30px;
+  }
+  .currency {
+    font-size: 20px;
+  }
+}

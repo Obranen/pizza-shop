@@ -1,0 +1,93 @@
+@import "../../../../utils/themes/variables.module";
+
+.contacts {
+  margin-top: 10px;
+  font-family: $secondary-font;
+  text-transform: capitalize;
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-top: 0;
+  }
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    padding-top: 40px;
+  }
+}
+
+.groupPhone {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    display: block;
+    font-size: 14px;
+    border: 1px solid $primary-color-light;
+    border-radius: 3px;
+    padding: 6px 14px;
+    animation: 10s linear 7s infinite both border-colors;
+  }
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    font-size: 16px;
+    min-width: 200px;
+  }
+}
+
+.title {
+  display: none;
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+
+.phoneNumber {
+
+}
+
+.phone {
+  text-align: center;
+}
+
+.iconKiev {
+  font-size: 12px;
+  margin-right: 3px;
+  color: dodgerblue;
+}
+
+.iconLife {
+  font-size: 12px;
+  margin-right: 3px;
+  color: orange;
+}
+
+@keyframes border-colors {
+
+  0% {
+    border-color: $primary-color-light;
+  }
+  17% {
+    border-color: crimson;
+  }
+  33% {
+    border-color: dodgerblue;
+  }
+  50% {
+    border-color: orange;
+  }
+  67% {
+    border-color: blueviolet;
+  }
+  84% {
+    border-color: green;
+  }
+  100% {
+    border-color: $primary-color-light;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../../utils/themes/variables.module";
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.starChange {
+  color: $secondary-color-dark;
+  cursor: pointer;
+  transition: .2s;
+  &:hover, &:hover ~ .starChange {
+    color: $secondary-color-main;
+  }
+}
+
+.starShow {
+  color: $secondary-color-dark;
+}
+
+.active {
+  color: $secondary-color-main;
+}

@@ -1,0 +1,82 @@
+@import "../../../utils/themes/variables.module";
+
+.tooltip {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  background: $secondary-color-main;
+  color: $primary-color-dark;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  width: max-content;
+  pointer-events: none;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-family: $secondary-font;
+}
+
+.top:after, .bottom:after, .left:after, .right:after {
+  content: "";
+  position: absolute;
+  /* Рисуем треугольник */
+  width: 0;
+  height: 0;
+  border-width: 10.4px 6px 0 6px;
+  border-color: $secondary-color-main transparent transparent transparent;
+  border-style: solid;
+  /* Снимаем клик с треугольника */
+  pointer-events: none;
+}
+
+.top {
+  bottom: calc(100% + 13px);
+  transform: translateX(-50%);
+  left: 50%;
+
+  &:after {
+    top: 25px;
+  }
+}
+
+.bottom {
+  bottom: unset;
+  top: calc(100% + 13px);
+  transform: translateX(-50%);
+  left: 50%;
+
+  &:after {
+    bottom: 25px;
+    transform: scaleY(-1);
+  }
+}
+
+.left {
+  left: unset;
+  top: 50%;
+  right: calc(100% + 13px);
+  transform: translateY(-50%);
+  margin-right: 0;
+
+  &:after {
+    right: -11px;
+    transform: rotate(-90deg);
+  }
+}
+
+.right {
+  top: 50%;
+  left: calc(100% + 13px);
+  transform: translateY(-50%);
+  margin-left: 0;
+
+  &:after {
+    left: -11px;
+    transform: rotate(90deg);
+  }
+}

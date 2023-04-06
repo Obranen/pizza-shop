@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.likeRating {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.content {
+  width: 400px;
+}

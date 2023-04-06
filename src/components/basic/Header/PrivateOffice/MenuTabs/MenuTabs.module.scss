@@ -1,0 +1,23 @@
+.mainTabs {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tabsList {
+  width: 100%;
+
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    width: 250px;
+  }
+}
+
+.tabsItem {
+  padding: 6px 0;
+}

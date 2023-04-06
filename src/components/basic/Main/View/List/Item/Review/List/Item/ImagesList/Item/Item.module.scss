@@ -1,0 +1,92 @@
+@import "../../../../../../../../../../../utils/themes/variables.module";
+
+.image {
+  position: relative;
+  width: 100%;
+  border: 1px solid $primary-color-main;
+  margin-bottom: 10px;
+  cursor: zoom-in;
+  margin-right: 10px;
+
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    width: 100px;
+  }
+
+  &:hover .group2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &:hover .group4 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.img {
+  display: inline-block;
+  transition: ease .3s;
+}
+
+.group1, .group3 {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.group1 {
+  bottom: 0;
+}
+
+.group3 {
+  top: 0;
+}
+
+.group2, .group4 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: rgba($primary-color-dark, .8);
+  opacity: 0;
+  transition: linear .3s;
+}
+
+.name, .size, .number, .delete {
+  color: $primary-color-light;
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+.name, .number {
+  padding-left: 3px;
+}
+
+.size, .delete {
+  padding-right: 3px;
+}
+
+.scale {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: scale(2) translate(50%, -20%);
+  cursor: zoom-out;
+  border: 1px solid $primary-color-dark;
+
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    transform: scale(3) translate(50%, -20%);
+  }
+
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    transform: scale(4) translate(50%, -20%);
+  }
+}
+
+.prevImage {
+  position: relative;
+  width: 100px;
+  z-index: 3;
+}

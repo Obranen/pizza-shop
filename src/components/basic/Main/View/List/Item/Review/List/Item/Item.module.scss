@@ -1,0 +1,87 @@
+@import "src/utils/themes/variables.module";
+
+.review {
+  border: 1px solid rgba($primary-color-dark, 0.2);
+  margin-top: 20px;
+  box-shadow: 3px 3px 3px rgba($primary-color-dark, 0.2);
+  border-radius: 6px;
+  padding: 12px 8px;
+  font-family: $secondary-font;
+  font-size: 14px;
+}
+
+.group1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.name {
+  .icon {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .text {
+    display: inline-block;
+
+    &:first-letter {
+      color: $secondary-color-dark;
+    }
+  }
+}
+
+.star {
+}
+
+.date {
+  .icon {
+    display: inline-block;
+    transform: translateY(1px);
+  }
+
+  .text {
+
+  }
+}
+
+.comment {
+  margin-top: 4px;
+  text-indent: 10px;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.dignity, .flaws {
+  font-family: $primary-font;
+  margin-top: 10px;
+
+  .title {
+    display: inline-block;
+    font-weight: bold;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .text {
+    display: block;
+    text-indent: 10px;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.group2 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted $primary-color-dark;
+  padding-bottom: 4px;
+  margin-top: 10px;
+}

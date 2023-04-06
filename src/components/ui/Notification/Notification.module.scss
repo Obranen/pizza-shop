@@ -1,0 +1,158 @@
+@import '../../../utils/themes/variables.module';
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  z-index: 4;
+  width: 100%;
+  // sm --- Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    width: 0;
+    left: 20px;
+  }
+}
+
+.notification {
+  position: relative;
+  width: 280px;
+  margin: 10px auto 0 auto;
+  background-color: $primary-color-dark;
+  padding: 6px;
+  border-radius: 6px;
+  font-family: $secondary-font;
+  font-size: 14px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .text {
+    color: $primary-color-light;
+  }
+}
+
+.icon {
+  display: block;
+  margin: auto;
+  transform: translateY(4px);
+  font-size: 22px;
+}
+
+.text {
+  margin-top: 10px;
+  color: $primary-color-main;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+//error
+.error {
+  border: 2px solid rgba($text-color-error, 0.8);
+  color: rgba($text-color-error, 0.8);
+
+  &:hover {
+    border: 2px solid $text-color-error;
+    color: $text-color-error;
+  }
+
+  &:hover .groupContent{
+    border-left: 2px solid $text-color-error;
+  }
+  &:hover .icon{
+    color: $text-color-error !important;
+  }
+
+  .groupContent {
+    border-left: 2px solid rgba($text-color-error, 0.8);
+    .icon {
+      color: rgba($text-color-error, 0.8);
+    }
+  }
+}
+
+//success
+.success {
+  border: 2px solid $secondary-color-dark;
+  color: $secondary-color-dark;
+
+  &:hover {
+    border-color: $secondary-color-main;
+    color: $secondary-color-main;
+  }
+
+  &:hover .groupContent{
+    border-left: 2px solid $secondary-color-main;
+  }
+  &:hover .icon{
+    color: $secondary-color-main !important;
+  }
+
+  .groupContent {
+    border-left: 2px solid $secondary-color-dark;
+    .icon {
+      color: $secondary-color-dark;
+    }
+  }
+}
+
+//fade
+.fadeOut {
+  animation: fadeOutKeyframes 1s forwards;
+}
+
+@keyframes fadeOutKeyframes {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  animation: fadeInKeyframes 1s forwards;
+}
+
+@keyframes fadeInKeyframes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//slide
+.slideIn {
+  animation: slideInKeyframes 1s forwards;
+}
+
+@keyframes slideInKeyframes {
+  0% {
+    opacity: 0;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.slideOut {
+  animation: slideOutKeyframes 1s forwards;
+}
+
+@keyframes slideOutKeyframes {
+  0% {
+    opacity: 1;
+    left: 0;
+  }
+  100% {
+    opacity: 0;
+    left: -300px;
+  }
+}

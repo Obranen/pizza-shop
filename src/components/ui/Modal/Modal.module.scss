@@ -1,0 +1,70 @@
+@import "../../../utils/themes/variables.module";
+
+.link {
+
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 3;
+  cursor: auto;
+  color: $primary-color-dark;
+  opacity: 0;
+  background-color: rgba($primary-color-dark, 0.94);
+}
+
+.content {
+  position: relative;
+  min-width: 300px;
+  background-color: $primary-color-light;
+  padding: 20px;
+  border-radius: 6px;
+  color: $primary-color-dark;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyOverflowHidden {
+  overflow: hidden;
+}
+
+.close {
+  font-size: 24px;
+  color: $text-color-error;
+  cursor: pointer;
+}
+
+.hide {
+  animation: hideModal .7s !important;
+}
+
+@keyframes hideModal {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.show {
+  animation: showModal .7s forwards;
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../../../../utils/themes/variables.module";
+
+.productNotFound {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 44px;
+  color: $secondary-color-dark;
+
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 54px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-family: $secondary-font;
+  font-weight: bold;
+
+    // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}

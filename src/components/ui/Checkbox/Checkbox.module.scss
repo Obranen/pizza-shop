@@ -1,0 +1,69 @@
+@import "src/utils/themes/variables.module";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  font-family: $secondary-font;
+  font-size: 14px;
+  padding: 6px 4px;
+
+  &:hover {
+    background-color: $primary-color-main;
+    border-radius: 6px;
+  }
+}
+
+.checkbox>input {
+  display: none;
+}
+
+.additionalPrice {
+
+}
+
+.checkbox>.name {
+  display: flex;
+  align-items: center;
+  color: $primary-color-dark;
+  transition: all ease .3s;
+}
+
+.checkbox>.name::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border: 1px solid $primary-color-dark;
+  border-radius: 0.25em;
+  margin-right: 5px;
+  display: inline-block;
+  line-height: 16px;
+  transition: all ease .3s;
+}
+
+.checkbox>input:checked+.name::before {
+  content: '\2713';
+  color: $primary-color-light;
+  border-color: $primary-color-dark;
+  background-color: $primary-color-dark;
+  font-size: 16px;
+  line-height: 14px;
+  transition: 0.3s;
+  transform: scale(1);
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.checkbox:disabled+label::before {
+  background-color: #ccc;
+}
+
+.price {
+  font-weight: bold;
+}

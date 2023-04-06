@@ -1,0 +1,14 @@
+@import "../../../../../../utils/themes/variables.module";
+
+.close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+  font-size: 22px;
+  color: $primary-color-main;
+
+  &:hover {
+    color: $primary-color-dark;
+  }
+}

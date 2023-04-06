@@ -1,0 +1,18 @@
+@import "../../../../../../../../utils/themes/variables.module";
+
+.weight {
+  display: inline-block;
+  font-family: $primary-font;
+  font-size: 18px;
+
+  .icon {
+    display: inline-block;
+    transform: translateY(1px);
+    font-size: 20px;
+    margin-right: 1px;
+  }
+}
+
+.currency {
+  font-size: 16px;
+}

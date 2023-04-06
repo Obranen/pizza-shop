@@ -1,0 +1,70 @@
+@import "../../../../utils/themes/variables.module";
+
+.wrapper {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover .title {
+    color: $secondary-color-main;
+  }
+  &:hover .description {
+    color: $primary-color-light;
+  }
+}
+
+.subscription {
+
+}
+
+.title {
+  font-family: $secondary-font;
+  font-weight: bold;
+  font-size: 20px;
+  color: $secondary-color-dark;
+}
+
+.iconCloseEmail, .iconOpenEmail {
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 2px;
+}
+
+.iconCloseEmail {
+  transform: translateY(5px);
+}
+
+.iconOpenEmail {
+  transform: translateY(3px);
+}
+
+.description {
+  color: $primary-color-main;
+  font-size: 12px;
+  font-family: $primary-font;
+}
+
+// sm --- Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .wrapper {
+    min-height: 80px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .description {
+    font-size: 13px;
+  }
+}
+
+// xl --- Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .title {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 14px;
+  }
+}

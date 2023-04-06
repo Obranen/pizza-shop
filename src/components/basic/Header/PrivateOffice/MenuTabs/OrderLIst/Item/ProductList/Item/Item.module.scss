@@ -1,0 +1,87 @@
+@import "../../../../../../../../../utils/themes/variables.module";
+
+.wrapper {
+
+}
+
+.product {
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.title {
+
+}
+
+.checkbox {
+  cursor: default;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.image {
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.wrapperTitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px 0 10px;
+  .title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .weight {
+    font-family: $secondary-font;
+  }
+}
+
+.wrapperOption, .wrapperPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.wrapperPrice {
+  margin-top: 10px;
+}
+
+.groupPrice {
+  margin-bottom: 10px;
+  font-family: $secondary-font;
+  font-size: 30px;
+  font-weight: bold;
+  color: $secondary-color-dark;
+  .icon {
+    transform: translateY(3px);
+    margin-right: 3px;
+  }
+  .price {
+
+  }
+  .currency {
+    font-size: 20px;
+  }
+}
+
+.groupQuantity {
+  font-family: $secondary-font;
+  .text {
+
+  }
+  .quantity {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 4px;
+  }
+}

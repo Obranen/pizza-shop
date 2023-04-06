@@ -1,0 +1,36 @@
+@import "../../../utils/themes/variables.module";
+
+.notFound {
+  text-align: center;
+  margin-top: 40px;
+
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    margin-top: 60px;
+  }
+}
+
+.icon {
+  display: block;
+  font-size: 46px;
+  color: $text-color-error;
+  margin: auto;
+
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    font-size: 54px;
+  }
+}
+
+.text {
+  display: block;
+  font-size: 18px;
+  font-family: $secondary-font;
+  font-weight: bold;
+  margin-top: 10px;
+
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    font-size: 20px;
+  }
+}

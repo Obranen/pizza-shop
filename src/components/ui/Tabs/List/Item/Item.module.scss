@@ -1,0 +1,35 @@
+@import "src/utils/themes/variables.module";
+
+.item {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.titleRow, .titleColumn {
+  border-right: 1px solid $primary-color-dark;
+  padding: 6px 20px;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.titleRow {
+  &:hover {
+    &:first-child {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+}
+
+.active {
+  background-color: $primary-color-dark;
+  color: $primary-color-light;
+}

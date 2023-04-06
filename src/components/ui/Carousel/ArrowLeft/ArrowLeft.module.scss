@@ -1,0 +1,26 @@
+@import "src/utils/themes/variables.module";
+
+.arrowLeft {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  background-color: rgba($primary-color-dark, .2);
+  width: 12%;
+  color: $primary-color-light;
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    width: 6%;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($primary-color-dark, .3);
+    color: $secondary-color-main;
+  }
+}
+
+.display {
+  display: none;
+}

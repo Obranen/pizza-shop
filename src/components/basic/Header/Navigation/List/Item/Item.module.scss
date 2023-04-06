@@ -1,0 +1,29 @@
+@import "../../../../../../utils/themes/variables.module";
+
+.navBarItem {
+  display: inline-block;
+  font-family: $secondary-font;
+  text-transform: capitalize;
+  a {
+    color: $primary-color-light;
+    text-decoration: none;
+    position: relative;
+    &:after {
+      content:"";
+      width:0;
+      height:100%;
+      position: absolute;
+      top:0;
+      right:0;
+      left:0;
+      margin: auto;
+      border-bottom: 2px solid $primary-color-light;
+      transition: all .2s linear;
+    }
+    &:hover {
+      &:after {
+        width:100%;
+      }
+    }
+  }
+}

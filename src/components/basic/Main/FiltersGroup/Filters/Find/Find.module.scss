@@ -1,0 +1,38 @@
+@import "../../../../../../utils/themes/variables.module";
+
+.wrapper {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+}
+
+.clearFind {
+  font-size: 16px;
+  position: absolute;
+  right: 3%;
+  top: 31%;
+  cursor: pointer;
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    right: 1.2%;
+  }
+  // lg --- Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    right: 2%;
+  }
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    right: 17%;
+  }
+}
+
+.find {
+  font-size: 14px;
+  padding-right: 30px;
+  // xl --- Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 16px;
+    width: 70%;
+    margin: auto;
+  }
+}

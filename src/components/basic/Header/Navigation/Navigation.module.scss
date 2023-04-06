@@ -1,0 +1,9 @@
+.navBar {
+  display: none;
+  // md --- Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 14px;
+  }
+}

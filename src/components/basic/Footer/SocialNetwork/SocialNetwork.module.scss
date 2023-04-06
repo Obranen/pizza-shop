@@ -1,0 +1,39 @@
+@import "../../../../utils/themes/variables.module";
+
+.socialNetwork {
+  display: none;
+}
+
+// sm --- Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .socialNetwork {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconGroup {
+    font-size: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .facebook, .telegram, .viber {
+    margin: 0 6px;
+    cursor: pointer;
+    display: flex;
+
+    &:hover {
+      color: $secondary-color-main;
+    }
+  }
+}
+
+// md --- Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .socialNetwork {
+    justify-content: flex-end;
+  }
+}
