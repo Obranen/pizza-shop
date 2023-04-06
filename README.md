@@ -1,6 +1,6 @@
 ### Demo:
 
-[Взглянуть на Demo проэкта: _pizza-shop-front-end_](https://pizza-shop-front-end.vercel.app/)
+[Взглянуть на Demo проекта: _pizza-shop-front-end_](https://pizza-shop-front-end.vercel.app/)
 
 ### Запуск через терминал:
 
